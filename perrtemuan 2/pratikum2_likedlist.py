@@ -1,10 +1,10 @@
 class Node:
-    def _init_(self, data=None, pointer=None) :
+    def __init__(self, data=None, pointer=None) :
         self.data = data
         self.next = pointer
 
 class LinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None
 
     def insert_at_first(self, data):
@@ -84,5 +84,6 @@ class LinkedList:
             while node_sekarang:
                 text_print += str(node_sekarang.data) + " -> "
                 node_sekarang = node_sekarang.next
+
 
             print(text_print)
